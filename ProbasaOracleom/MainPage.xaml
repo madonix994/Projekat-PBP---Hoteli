@@ -1,0 +1,82 @@
+﻿<Window x:Class="ProbasaOracleom.MainPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProbasaOracleom"
+        mc:Ignorable="d"
+        Title="MainPage" Background="#04c582" Height="710" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Border Background="#2e3137" CornerRadius="20" Margin="20,20,20,20">
+        <StackPanel Margin="20,20,20,0">
+            <Border Margin="0,10,20,0" BorderBrush="DodgerBlue" Name="borderimagelogout" HorizontalAlignment="Right" Width="50" BorderThickness="1" VerticalAlignment="Top" Height="50">
+                <Button  Click="Logout_Click" Margin="0">
+                    <Image x:Name="logout" Height="45" Width="45" Source="Images/LOGOUT.png" Stretch="Fill" MouseEnter="visitors_MouseEnter" MouseLeave="visitors_MouseLeave" RenderTransformOrigin="6.98,-2.765"/>
+                </Button>
+            </Border>
+            <Label Content="POČETNI PANEL" Foreground="White" FontSize="50" HorizontalAlignment="Center" Margin="0,-60,0,0"></Label>
+            
+            <Separator></Separator>
+            <Border Margin="50,10,0,0" BorderBrush="DodgerBlue" Name="borderimage" HorizontalAlignment="Left" Width="150" BorderThickness="1" VerticalAlignment="Top">
+                <Button  Click="Button_Click" Margin="0">
+                    <Image x:Name="visitors" Height="150" Width="150" Source="Images/VISITOR.png" Stretch="Fill" MouseEnter="visitors_MouseEnter" MouseLeave="visitors_MouseLeave"/>
+                </Button>
+            </Border>
+            
+            <Border Margin="270,-155,0,0" BorderBrush="DodgerBlue" Name="borderimage2" HorizontalAlignment="Left" Width="150" BorderThickness="1" VerticalAlignment="Top">
+                <Button  Click="Hotel_Click" Margin="0">
+                    <Image x:Name="Hotels" Height="150" Width="150" Source="Images/HOTEL.png" Stretch="Fill" />
+                </Button>
+            </Border>
+            <Border Margin="0,-155,50,0" BorderBrush="DodgerBlue" Name="borderimage3" HorizontalAlignment="Right" Width="150" BorderThickness="1" VerticalAlignment="Center">
+                <Button  Click="Service_Click" Margin="0">
+                    <Image x:Name="Services" Height="150" Width="145" Source="Images/SERVICES.png" Stretch="Fill" />
+                </Button>
+            </Border>
+            <Border Margin="0,-155,270,0" BorderBrush="DodgerBlue" Name="borderimage4" HorizontalAlignment="Right" Width="150" BorderThickness="1" VerticalAlignment="Center">
+                <Button  Click="Type_Click" Margin="0">
+                    <Image x:Name="Types" Height="150" Width="150" Source="Images/TYPES.jpg" Stretch="Fill" />
+                </Button>
+            </Border>
+            <Label Content="GOSTI" Foreground="White" FontSize="20" HorizontalAlignment="Left" Margin="92,0,0,0" FontWeight="Bold"/>
+            <Label Content="HOTELI" Foreground="White" FontSize="20" HorizontalAlignment="Left" Margin="307,-38,0,0" FontWeight="Bold"/>
+            <Label Content="TIPOVI APARTMANA" Foreground="White" FontSize="20" HorizontalAlignment="Right" Margin="0,-38,243,0" FontWeight="Bold"/>
+            <Label Content="USLUGE" Foreground="White" FontSize="20" HorizontalAlignment="Right" Margin="0,-38,80,0" FontWeight="Bold"/>
+
+            
+            
+            <Border Margin="0,10,50,0" BorderBrush="DodgerBlue" Name="borderimage5" HorizontalAlignment="Right" Width="150" BorderThickness="1" VerticalAlignment="Bottom">
+                <Button  Click="Apartment_Click" Margin="0">
+                    <Image x:Name="Apartments" Height="150" Width="143" Source="Images/APARTMENTS.jpg" Stretch="Fill" />
+                </Button>
+            </Border>
+            <Border Margin="0,-155,270,0" BorderBrush="DodgerBlue" Name="borderimage6" HorizontalAlignment="Right" Width="150" BorderThickness="1" VerticalAlignment="Center">
+                <Button  Click="Bill_Click" Margin="0">
+                    <Image x:Name="Bills" Height="150" Width="145" Source="Images/BILL.jpg" Stretch="Fill" />
+                </Button>
+            </Border>
+            <Border Margin="270,-155,0,0" BorderBrush="DodgerBlue" Name="borderimage7" HorizontalAlignment="Left" Width="150" BorderThickness="1" VerticalAlignment="Top">
+                <Button  Click="Contract_Click" Margin="0">
+                    <Image x:Name="Contracts" Height="150" Width="145" Source="Images/CONTRACTS.jpg" Stretch="Fill" />
+                </Button>
+            </Border>
+            <Border Margin="50,-155,0,0" BorderBrush="DodgerBlue" Name="borderimage8" HorizontalAlignment="Left" Width="150" BorderThickness="1" VerticalAlignment="Top">
+                <Button  Click="AdditionalService_Click" Margin="0">
+                    <Image x:Name="AdditionalServices" Height="150" Width="145" Source="Images/ADDITIONAL.jpg" Stretch="Fill" MouseEnter="visitors_MouseEnter" MouseLeave="visitors_MouseLeave"/>
+                </Button>
+            </Border>
+            <Label Content="DODATNE USLUGE" Foreground="White" FontSize="20" HorizontalAlignment="Left" Margin="30,0,0,0" FontWeight="Bold"/>
+            <Label Content="UGOVORI" Foreground="White" FontSize="20" HorizontalAlignment="Left" Margin="290,-38,0,0" FontWeight="Bold"/>
+            <Label Content="RAČUNI" Foreground="White" FontSize="20" HorizontalAlignment="Right" Margin="0,-38,300,0" FontWeight="Bold"/>
+            <Label Content="APARTMANI" Foreground="White" FontSize="20" HorizontalAlignment="Right" Margin="0,-38,60,0" FontWeight="Bold"/>
+            <Border Margin="0,5,0,0" BorderBrush="DodgerBlue" Name="borderimage9" HorizontalAlignment="Center" BorderThickness="1" VerticalAlignment="Bottom">
+                <Button  Click="Reservation_Click" Margin="0">
+                    <Image x:Name="ReservationsServices" Height="100" Width="600" Source="Images/RESERVATION.png" Stretch="Fill" MouseEnter="visitors_MouseEnter" MouseLeave="visitors_MouseLeave"/>
+                </Button>
+            </Border>
+
+
+
+        </StackPanel>
+
+    </Border>
+</Window>
